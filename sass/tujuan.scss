@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #fff;
+    --bg-color: #f4f4f4;
     --line-color-1: #366;
     --line-color-2: #a9a9a9;
 }
@@ -24,16 +24,18 @@
         }
     }
 
+    //#efbabe garis lurus vertikal
     .kertas {
         // background: white;
-        padding: 16px;
+        padding: 16px 16px 16px 62px;
         width: 100%;
         height: 100%;
+        position: relative;
         background-color: var(--bg-color);
         background-image:
-            linear-gradient(rgba(black, 0.1) 2.5px, transparent 1.5px),
+            linear-gradient(rgba(#d9eaea, 1) 2.5px, transparent 1.5px),
             // linear-gradient(90deg, red 1.5px, transparent 1.5px),
-            linear-gradient(rgba(black, 0.15) 1px, transparent 1px),
+            linear-gradient(rgba(#d9eaea, 1) 2px, transparent 2px),
             // linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px)
 ;
         background-position:
@@ -44,11 +46,28 @@
 ;
         background-size:
             0 9px,
+            // 40px 40px,
             24px 38px;
         @media screen and (max-width: 768px) {
             background-size:
                 0 9px,
                 24px 24px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 32px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            height: 100%;
+            background: #efbabe;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 1.3rem;
+            }
         }
     }
 }
