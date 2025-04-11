@@ -31,7 +31,7 @@
 }
 
 .content {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .section {
         padding: 64px 0;
     }
@@ -39,7 +39,7 @@
 
 .content .section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .content .section.hero {
