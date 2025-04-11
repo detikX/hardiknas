@@ -21,6 +21,51 @@
             vertical-align: top;
         }
     }
+
+    .contentx {
+        .guru {
+            position: absolute;
+            right: -16px;
+            bottom: 0;
+            width: 140px;
+            height: auto;
+            filter: drop-shadow(-2px 0px 0px #000);
+            @media screen and (max-width: 768px) {
+                right: -16%;
+                bottom: 0;
+                width: 120px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        margin-bottom: 24px;
+        position: relative;
+        .titlex {
+            padding: 16px;
+            background: white;
+            width: fit-content;
+            @media screen and (max-width: 768px) {
+                padding: 8px;
+            }
+            h4 {
+                font-size: 1.5rem;
+                font-family: "Source Code Pro" !important;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .desc {
+            padding: 16px 120px 16px 16px;
+            background: linear-gradient(to right, #eaeaea, rgba(#eaeaea, 0.8));
+            @media screen and (max-width: 768px) {
+                padding: 8px 65px 8px 8px;
+            }
+        }
+    }
 }
 
 .wrapper,
