@@ -35,6 +35,9 @@
     .judul {
         font-size: 2.8rem;
         color: #1d1d1b;
+        @media screen and (max-width: 768px) {
+            font-size: 2.2rem;
+        }
     }
     .blocking {
         display: block;
