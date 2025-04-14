@@ -42,6 +42,7 @@
     .indo {
         position: absolute;
         left: 50%;
+        z-index: 1;
         top: 50%;
         animation: indo 9s linear infinite;
         translate: -50% -50%;
