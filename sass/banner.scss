@@ -314,9 +314,9 @@
         position: absolute;
         left: 50%;
         top: 30%;
-        text-align: center;
-        translate: -45% -50%;
-        width: fit-content;
+        // text-align: center;
+        translate: -23% -50%;
+        width: 90%;
         z-index: 6;
         // background: #fff;
         padding: 16px 32px 16px 70px;
@@ -332,9 +332,9 @@
         }
 
         h2 {
-            font-size: 3rem;
+            font-size: 3.3rem;
             margin-bottom: 0;
-            // font-family: 'guru';
+            font-family: "guru";
             color: white;
             @media screen and (max-width: 768px) {
                 font-size: 2.5rem;
