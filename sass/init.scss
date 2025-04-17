@@ -13,6 +13,13 @@ $third: #baf5ed; //(186,245,237)
 $colorsecond: #42d4bf;
 $colorhelp: #33a4b9;
 
+@font-face {
+    font-family: "guru";
+    src: url("guru.woff2");
+    src: local("guru");
+    src: url("guru.woff2") format("woff2");
+}
+
 .load {
     background: linear-gradient(to top, white, rgba($color: white, $alpha: 1));
     padding: 16px;
@@ -197,7 +204,7 @@ section {
 
     h3 {
         // color: $colorred;
-        font-family: "Outfit", sans-serif;
+        font-family: "guru", sans-serif;
         font-weight: 700;
         color: #124646;
         font-size: 2rem;
@@ -392,27 +399,6 @@ h5 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-}
-.hello {
-    width: 100%;
-    height: auto;
-    margin-top: 8px;
-    // background: linear-gradient(to top, rgba($colorred, 0.5), rgba($colorred, 0.2));
-    border-radius: 16px;
-    // background: rgba(silver, 0.6);
-    margin-bottom: 16px;
-    background: linear-gradient(to right, $third, rgba($third, 0.8));
-    position: relative;
-
-    .content {
-        padding: 16px 16px;
-        position: relative;
-        z-index: 2;
-        p {
-            margin-bottom: 0;
-            // font-size: 1rem;
-        }
     }
 }
 
@@ -697,15 +683,15 @@ section {
 }
 
 .creditx {
-    min-height: auto;
-    background: #42566f;
-    border-top: 1px dashed #ccc;
+    min-height: auto !important;
+    // background: #42566f;
+    // border-top: 1px dashed #ccc;
     .alls {
         width: 75%;
         font-size: 1.2rem;
         margin: 0 auto;
         text-align: center;
-        color: white;
+        // color: white;
         margin-bottom: 16px;
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -724,4 +710,8 @@ section {
     margin: 16px 0;
     width: fit-content;
     // border-bottom: 1px dashed;
+}
+
+.alls {
+    margin-bottom: 16px;
 }

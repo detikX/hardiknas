@@ -168,7 +168,8 @@
 }
 
 .hello {
-    background: $colorred;
+    // background: ;
+
     li {
         scroll-snap-align: center;
         padding-left: 0.2em;
@@ -192,15 +193,19 @@
     h1,
     ul,
     li {
-        margin: 2px 0;
         font-weight: 800;
         // text-transform: uppercase;
         // letter-spacing: 0.06em;
         // line-height: 1;
         color: white;
-        font-size: 2.5rem;
+        line-height: 2.2rem;
+        font-family: "guru";
+        font-size: 2rem;
+        margin: 8px 0;
         @media screen and (max-width: 768px) {
-            font-size: 1.8rem;
+            margin: 2px 0;
+            font-size: 1.5rem;
+            line-height: 2rem;
         }
     }
 
@@ -218,8 +223,8 @@
     ul,
     h1,
     li {
-        margin: 0;
-        line-height: 1;
+        // margin: 0;
+        // line-height: 1;
     }
 }
 
