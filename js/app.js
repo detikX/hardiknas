@@ -125,3 +125,21 @@ gsap.to(sections, {
         end: () => "+=" + document.querySelector(".containerx").offsetWidth
     }
 });
+
+
+
+$("#play").click(function () {
+    responsiveVoice.speak($(".contentx h4, .contentx p").text(), "Indonesian Male");
+    // setTimeout(() => {
+    //     $('html, body').animate({
+    //         scrollTop: $(".bungkus").offset().top - 72
+    //     }, 1000);
+
+    // }, 12000);
+
+
+})
+$("#stop").click(function () {
+    responsiveVoice.cancel();
+
+})
