@@ -505,7 +505,7 @@
         border: none;
         cursor: pointer;
         color: var(--text-color);
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         border-radius: var(--border-radius);
         transition:
             transform var(--transition-speed),
@@ -516,6 +516,9 @@
         font-weight: bold;
         // text-transform: uppercase;
         letter-spacing: 1px;
+        @media screen and (max-width: 768px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
