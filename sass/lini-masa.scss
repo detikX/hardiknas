@@ -414,6 +414,16 @@
         position: relative;
         box-sizing: border-box;
         padding: 0px;
+        &.subuh {
+            // background: #ffd186;
+            background: #a2dbcd;
+        }
+        &.siang {
+            background: linear-gradient(to right, #a2dbcd, #ffd186);
+        }
+        &.siang-full {
+            background: #ffd186;
+        }
         .title {
             position: absolute;
             top: 2%;
@@ -517,7 +527,8 @@
         // text-transform: uppercase;
         letter-spacing: 1px;
         @media screen and (max-width: 768px) {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            padding: 8px;
         }
     }
 }
