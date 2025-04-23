@@ -334,7 +334,7 @@
 }
 
 .containerx {
-    width: 500%;
+    width: 600%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -423,6 +423,12 @@
         }
         &.siang-full {
             background: #ffd186;
+        }
+        &.hujan {
+            background: linear-gradient(to right, #ffd186, #1a1a1d);
+        }
+        &.hujan-full {
+            background: #1a1a1d;
         }
         .title {
             position: absolute;
