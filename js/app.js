@@ -142,4 +142,34 @@ $("#play").click(function () {
 $("#stop").click(function () {
     responsiveVoice.cancel();
 
-})
+});
+
+
+
+//clock
+
+// Function to update the clock hands
+function updateClock() {
+    const now = new Date();
+    const hour = now.getHours() % 12;
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+
+    const hourHand = document.querySelector('.hour-hand');
+    const minuteHand = document.querySelector('.minute-hand');
+    const secondHand = document.querySelector('.second-hand');
+
+    // Calculate degrees for each hand
+    const hourDeg = (hour * 30) + (minute * 0.5); // 30 degrees per hour + 0.5 degrees per minute
+    const minuteDeg = (minute * 6) + (second * 0.1); // 6 degrees per minute + 0.1 degrees per second
+    const secondDeg = second * 6; // 6 degrees per second
+
+    // Apply rotation to hands
+    hourHand.style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+    minuteHand.style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+    secondHand.style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+updateClock(); // Initial call to set the clock
