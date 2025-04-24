@@ -459,6 +459,11 @@
             text-align: left;
             width: 30%;
             left: 65px;
+            p {
+                @media screen and (max-width: 768px) {
+                    font-size: 1.1rem;
+                }
+            }
             &-foto {
                 width: 100px;
                 height: 100px;
