@@ -419,16 +419,16 @@
             background: #a2dbcd;
         }
         &.siang {
-            background: linear-gradient(to right, #a2dbcd, #ffd186);
+            background: linear-gradient(to left, #a2dbcd, #ffd186);
         }
         &.siang-full {
             background: #ffd186;
         }
         &.hujan {
-            background: linear-gradient(to right, #ffd186, #8d3c0e);
+            background: linear-gradient(to right, #ffd186, #c45618);
         }
         &.hujan-full {
-            background: #8d3c0e;
+            background: #c45618;
         }
         .title {
             position: absolute;
