@@ -5,7 +5,51 @@
 }
 
 .tujuan {
-    padding: 0;
+    @media screen and (max-width: 768px) {
+        padding: 0 0 32px;
+    }
+    padding: 0 0 150px;
+    background-image: linear-gradient(rgba(#fcfcfc, 0.3) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(#fcfcfc, 0.3) 1.5px, transparent 1.5px),
+        linear-gradient(rgba(#fafafa, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(#fafafa, 0.3) 1px, transparent 1px);
+    background-position:
+        -1.5px -1.5px,
+        -1.5px -1.5px,
+        -1px -1px,
+        -1px -1px;
+    background-size:
+        0 100px,
+        0 100px,
+        40px 40px,
+        40px 40px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, $colorred, rgba($colorred, 0.6), $colorred);
+    }
+    .awan {
+        position: absolute;
+        bottom: -24%;
+        width: 106%;
+        z-index: 9;
+        height: fit-content;
+        left: -5%;
+        @media screen and (max-width: 768px) {
+            bottom: -3%;
+            width: 106%;
+            left: -4%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     h3 {
     }
     .white-animate {
@@ -30,6 +74,9 @@
     //#efbabe garis lurus vertikal
     .kertas {
         // background: white;
+        @media screen and (max-width: 768px) {
+            padding: 16px 16px 16px 40px;
+        }
         padding: 16px 16px 16px 62px;
         width: 100%;
         height: 100%;
@@ -156,7 +203,7 @@
         width: 20vw;
         height: auto;
         position: absolute;
-        left: 8%;
+        left: 5%;
         bottom: 24px;
         z-index: 12;
         @media screen and (max-width: 768px) {
