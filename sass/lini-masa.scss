@@ -464,7 +464,12 @@
                 }
             }
             &.kbk {
-                top: 65px;
+                width: 50%;
+                top: 60px;
+                @media screen and (max-width: 768px) {
+                    top: 40px;
+                    width: 100%;
+                }
             }
             &.baris {
                 width: 90%;
@@ -527,6 +532,12 @@
                 &.baris {
                     @media screen and (max-width: 768px) {
                         top: 165px;
+                    }
+                }
+                &.kbkx {
+                    top: 170px;
+                    @media screen and (max-width: 768px) {
+                        top: 160px;
                     }
                 }
                 &.cbsa {
