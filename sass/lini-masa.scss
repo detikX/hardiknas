@@ -334,7 +334,7 @@
 }
 
 .containerx {
-    width: 1000%;
+    width: 1100%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -451,6 +451,11 @@
             position: absolute;
             top: 78px;
             left: 5%;
+            &.baris {
+                width: 90%;
+                left: 5%;
+                z-index: 6;
+            }
             // rotate: -2deg;
             @media screen and (max-width: 768px) {
                 top: 86px;
@@ -461,6 +466,7 @@
                 color: #2e7d32;
                 @media screen and (max-width: 768px) {
                     font-size: 2.7rem;
+                    line-height: 2.7rem;
                 }
             }
         }
@@ -499,6 +505,14 @@
             }
             &-tops {
                 top: 125px;
+                &.agak {
+                    top: 72px;
+                }
+                &.baris {
+                    @media screen and (max-width: 768px) {
+                        top: 165px;
+                    }
+                }
             }
             &-mintops {
                 top: -8px;
@@ -580,5 +594,48 @@
     &:focus {
         box-shadow: rgb(29, 97, 34) 0px 4.67574px 0px 0px;
         transform: translateY(5.32426px);
+    }
+}
+
+.btn-block {
+}
+
+.card {
+    padding: 0;
+    &-header {
+        padding: 0;
+    }
+    &-body {
+        padding: 0.75rem 1.25rem;
+        p {
+            font-family: "Source Code Pro";
+            font-size: 1.1rem !important;
+            @media screen and (max-width: 768px) {
+                font-size: 0.9rem !important;
+            }
+        }
+    }
+    button {
+        font-size: 1.2rem;
+        @media screen and (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+        outline: 0;
+        border: none;
+        font-family: "Source Code Pro";
+        background: #e2e2e2;
+        padding: 8px 16px;
+        font-weight: 600;
+        &.collapsed {
+            &::after {
+                content: "\f107";
+            }
+        }
+        &::after {
+            content: "\f106";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            float: right;
+        }
     }
 }
