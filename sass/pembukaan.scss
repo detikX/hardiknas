@@ -4,5 +4,10 @@
     p {
         color: white;
         font-family: "guru";
+        font-size: 1.1rem;
+        // line-height: 1rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
     }
 }
