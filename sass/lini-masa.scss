@@ -476,8 +476,14 @@
                 width: 50%;
                 top: 60px;
                 @media screen and (max-width: 768px) {
-                    top: 40px;
+                    top: 95px;
                     width: 100%;
+                }
+                h4 {
+                    @media screen and (max-width: 768px) {
+                        font-size: 2.2rem;
+                        line-height: 2.2rem;
+                    }
                 }
             }
             &.baris {
