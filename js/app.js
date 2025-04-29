@@ -182,12 +182,20 @@ function scrollIndicator() {
     var scrolled = (winScroll / height) * 100;
     console.log(scrolled);
 
-    if (Math.round(scrolled) > 52 && Math.round(scrolled) < 60) {
+    if (Math.round(scrolled) > 35 && Math.round(scrolled) < 46) {
         $(".sepeda").addClass('standing');
 
-    } else {
+    }
+    else {
         $(".sepeda").removeClass('standing');
     }
+    if (Math.round(scrolled) > 75 && Math.round(scrolled) < 77) {
+        $(".sepeda").addClass('standing-down');
+    } else {
+        $(".sepeda").removeClass('standing-down');
+    }
+
+
 }
 
 

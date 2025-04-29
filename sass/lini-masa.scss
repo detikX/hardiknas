@@ -334,7 +334,7 @@
 }
 
 .containerx {
-    width: 2400%;
+    width: 2700%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -473,7 +473,7 @@
                 }
             }
             &.kbk {
-                width: 50%;
+                width: 40%;
                 top: 60px;
                 @media screen and (max-width: 768px) {
                     top: 50px;
@@ -734,5 +734,10 @@
 
 .standing {
     rotate: -24deg;
+    transition: 0.3s;
+}
+
+.standing-down {
+    rotate: 24deg;
     transition: 0.3s;
 }
