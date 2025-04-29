@@ -627,7 +627,7 @@
             bottom: 20vh;
             width: 100%;
             height: 80%;
-            z-index: 3;
+            z-index: 1;
             @media screen and (max-width: 768px) {
                 position: absolute;
                 // bottom: 100px;
@@ -730,4 +730,9 @@
     @media screen and (max-width: 768px) {
         height: 135px !important;
     }
+}
+
+.standing {
+    rotate: -24deg;
+    transition: 0.3s;
 }

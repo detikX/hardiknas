@@ -173,3 +173,23 @@ function updateClock() {
 // Update the clock every second
 setInterval(updateClock, 1000);
 updateClock(); // Initial call to set the clock
+
+
+function scrollIndicator() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // var height = $(".ref").height();
+    var scrolled = (winScroll / height) * 100;
+    console.log(scrolled);
+
+    if (Math.round(scrolled) > 52 && Math.round(scrolled) < 60) {
+        $(".sepeda").addClass('standing');
+
+    } else {
+        $(".sepeda").removeClass('standing');
+    }
+}
+
+
+
+window.onscroll = function () { scrollIndicator(); };
