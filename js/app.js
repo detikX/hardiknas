@@ -1,6 +1,9 @@
+$(document).ready(function () {
+    AOS.init();
+    // new WOW().init();
+})
 
-
-
+$(".tujuan .kertas p").attr({ "data-aos": "fade-right", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
 // (function ($) {
 //     $(function () {
@@ -180,7 +183,7 @@ function scrollIndicator() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     // var height = $(".ref").height();
     var scrolled = (winScroll / height) * 100;
-    console.log(scrolled);
+    // console.log(scrolled);
 
     if (Math.round(scrolled) > 35 && Math.round(scrolled) < 46) {
         $(".sepeda").addClass('standing');
