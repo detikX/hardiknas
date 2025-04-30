@@ -491,10 +491,13 @@
                 left: 5%;
                 z-index: 6;
                 top: 76px;
+                @media screen and (max-width: 768px) {
+                    top: 99px;
+                }
             }
             // rotate: -2deg;
             @media screen and (max-width: 768px) {
-                top: 90px;
+                top: 95px;
                 left: -4%;
             }
             h4 {
